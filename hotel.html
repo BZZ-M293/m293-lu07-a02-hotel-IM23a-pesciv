@@ -6,9 +6,42 @@
 
 </head>
 <body>
+<form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
+  <fieldset>
+    <legend>room type</legend>
+      <label>room-type
+        <select name="Zimmertyp[]" size="5" multiple>
 
-<h1>Hotelzimmer-Buchungssystem</h1>
+          <option>einzel Zimmer</option>
+          <option>doppel Zimmer</option>
+          <option>Falmilien Zimmer</option>
+          <option>Suit</option>
+          <option>Presidential Suit</option>
 
+        </select>
+      </label>
+  </fieldset>
+  <button type="submit">submit</button>
+</form>
+<form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
+  <fieldset>
+    <legend>additional packages</legend>
+
+      <input type="checkbox" name="zusatzdienst[]" value="spa" id="1">
+      <label for="1">Spa</label><br>
+
+      <input type="checkbox" name="zusatzdienst[]" value="breakfast" id="2">
+      <label for="2">breackfast</label><br>
+
+      <input type="checkbox" name="zusatzdienst[]" value="gym" id="3">
+      <label for="3">gym</label><br>
+
+      <input type="checkbox" name="zusatzdienst[]" value="transport" id="4">
+      <label for="4">transport</label><br>
+
+  </fieldset>
+  <button type="submit">submit</button>
+</form>
 
 </body>
 </html>
